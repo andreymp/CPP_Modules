@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jobject <jobject@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/13 12:19:19 by jobject           #+#    #+#             */
+/*   Updated: 2021/12/13 12:19:19 by jobject          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#pragma once
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 
@@ -5,9 +18,8 @@
 
 class Contact {
     public:
-        Contact(void) = default;
-        Contact(const Contact &others);
-        ~Contact(void) = default;
+        Contact(void);
+        ~Contact(void);
         void    setFirtsName(std :: string _name);
         void    setLastName(std :: string _last);
         void    setSecret(std :: string _secret);
@@ -22,7 +34,7 @@ class Contact {
         std :: string   firstName;
         std :: string   lastName;
         std :: string   darkestSecret;
-        std :: string  nickname;
+        std :: string  	nickname;
         long long       phoneNumber;     
 };
 

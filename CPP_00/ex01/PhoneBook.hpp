@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jobject <jobject@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/13 12:19:27 by jobject           #+#    #+#             */
+/*   Updated: 2021/12/13 12:19:27 by jobject          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#pragma once
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 
@@ -7,9 +20,8 @@
 
 class PhoneBook {
     public:
-        PhoneBook(void) = default;
-        PhoneBook(const PhoneBook   &others);
-        ~PhoneBook(void) = default;
+        PhoneBook(void);
+        ~PhoneBook(void);
         void    makeExit(void) const;
         void    makeAdd(int *index);
         void    makeSearch(int size) const;

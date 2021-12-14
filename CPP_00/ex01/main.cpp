@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jobject <jobject@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/13 12:19:22 by jobject           #+#    #+#             */
+/*   Updated: 2021/12/13 12:19:22 by jobject          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "PhoneBook.hpp"
 
 int main(void) {
@@ -8,8 +20,9 @@ int main(void) {
 
     std :: cout << "Choose option" << std :: endl;
     while (flag) {
-        std :: cin >> option;
-        if (option == "EXIT") {
+        if (!(std :: cin >> option))
+			flag = false;
+        else if (option == "EXIT") {
             book.makeExit();
             flag = false;
         }

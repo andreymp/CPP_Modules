@@ -1,4 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jobject <jobject@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/13 12:19:16 by jobject           #+#    #+#             */
+/*   Updated: 2021/12/13 12:19:16 by jobject          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Contact.hpp"
+
+Contact :: Contact(void) {}
+Contact :: ~Contact(void) {}
 
 void    Contact :: setFirtsName(std :: string _name) {
     Contact :: firstName = _name;
