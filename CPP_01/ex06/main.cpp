@@ -5,25 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jobject <jobject@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/14 20:51:59 by jobject           #+#    #+#             */
-/*   Updated: 2021/12/15 11:42:22 by jobject          ###   ########.fr       */
+/*   Created: 2021/12/15 11:51:15 by jobject           #+#    #+#             */
+/*   Updated: 2021/12/15 11:57:19 by jobject          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Karen.hpp"
 
-int main(void) {
+int main(int argc, char **argv) {
 	Karen	karen;
 
-	std :: cout << "\033[0;33m--DEBUG LEVEL--\033[0;37m" << std :: endl;
-	karen.complain("debug");
-	std :: cout << "\033[0;33m--INFO LEVEL---\033[0;37m" << std :: endl;
-	karen.complain("info");
-	std :: cout << "\033[0;33m-WARNING LEVEL-\033[0;37m" << std :: endl;
-	karen.complain("warning");
-	std :: cout << "\033[0;33m--ERROR LEVEL--\033[0;37m" << std :: endl;
-	karen.complain("error");
-	std :: cout << "\033[0;33mNOT EXISTING LEVEL\033[0;37m" << std :: endl;
-	karen.complain("I am not exist");
+	if (argc != 2) {
+		std :: cerr << "Wrong number of arguments" << std :: endl;
+		return 1;
+	}
+	std :: string level(argv[1]);
+	karen.complain(level);
 	return 0;
 }
