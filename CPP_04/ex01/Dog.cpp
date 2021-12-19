@@ -18,7 +18,7 @@ Dog :: Dog(void) {
 	std :: cout << "Dog: Default constructor called" << std :: endl;
 }
 
-Dog :: Dog(const Dog &other) {
+Dog :: Dog(const Dog &other) : Animal(other) {
 	*this = other;
 	std :: cout << "Dog: Copy constructor called" << std :: endl;
 }

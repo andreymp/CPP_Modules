@@ -16,13 +16,6 @@ Animal :: ~Animal(void) {
 	std :: cout << "Animal: Destructor called" << std :: endl;
 }
 
-// Animal	&Animal :: operator=(const Animal	&other) {
-// 	std :: cout << "Animal: Asignature operator called" << std :: endl;
-// 	if (this != &other)
-// 		type = other.getType();
-// 	return *this;
-// }
-
 std :: string	Animal :: getType(void) const {
 	return type;
 }
