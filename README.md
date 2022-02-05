@@ -1,5 +1,5 @@
 # CPP_Modules (42 educational C++98 project)
-This is 9 modules that introduces to the OOP in C++
+This are 9 modules that introduces to the OOP in C++
 ## Description
 ### [CPP_00](https://github.com/andreymp/CPP_Modules/tree/main/CPP_00)
 This first module of C++ is designed to help you understand the specifities of the language when compared to C.
